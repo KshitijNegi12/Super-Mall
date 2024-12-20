@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div id="admin-panel">
+    <h1>Admin Panel</h1>
+
+    <div class="login-section">
+      <h2>Admin Login</h2>
+      <form id="admin-login-form">
+        <label for="admin-email">Email:</label>
+        <input type="email" id="admin-email" required>
+
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="shop-management">
+      <h2>Shop Management</h2>
+      <form id="create-shop-form">
+        <label for="shop-name">Shop Name:</label>
+        <input type="text" id="shop-name" required>
+
+        <label for="shop-floor">Floor:</label>
+        <input type="number" id="shop-floor" required>
+
+        <label for="shop-category">Category:</label>
+        <input type="text" id="shop-category" required>
+
+        <label for="shop-owner">Owner:</label>
+        <input type="text" id="shop-owner" required>
+
+        <button type="submit">Create Shop</button>
+      </form>
+    </div>
+
+    <div class="offer-management">
+      <h2>Offer Management</h2>
+      <form id="create-offer-form">
+        <label for="offer-title">Offer Title:</label>
+        <input type="text" id="offer-title" required>
+
+        <label for="offer-details">Details:</label>
+        <textarea id="offer-details" required></textarea>
+
+        <label for="offer-shop">Shop ID:</label>
+        <input type="text" id="offer-shop" required>
+
+        <button type="submit">Create Offer</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
